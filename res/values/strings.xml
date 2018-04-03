@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">İnciMobile</string>
+    <string name="title_activity_home">İnciMobile</string>
+    <string name="title_activity_topic">İnciMobile</string>
+
+    <color name="ThemeColor">#2E2E2E</color>
+
+    <string name="title_activity_sukela">Sukela</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_user">Yazar</string>
+    <string name="title_activity_entry">İnciMobile</string>
+    <string name="title_activity_notice">olan biten</string>
+    <string name="title_activity_msg">Mesaj</string>
+    <string name="title_activity_edit">duzelt</string>
+
+</resources>

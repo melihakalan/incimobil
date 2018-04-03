@@ -1,0 +1,65 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/inciback"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Sukela" >
+    
+    <LinearLayout 
+        android:id="@+id/sukela_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+     	<TextView 
+            android:id="@+id/sukela_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#D8D8D8"
+            android:background="@drawable/topic_shape" />
+     	
+		<Button
+			android:id="@+id/sukela_refresh"
+		  	android:layout_width="match_parent"
+		  	android:layout_height="36dp"
+		  	android:layout_marginTop="10dp"
+		 	android:background="@drawable/btnyellow"
+		 	android:textColor="#2E2E2E"
+		 	android:textStyle="bold"
+		 	android:onClick="doRefresh"
+			android:text="yenile" />
+     	
+    	<LinearLayout 
+	        android:id="@+id/sukela_body"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:orientation="vertical" >
+	    </LinearLayout>
+	    
+		<Button
+			android:id="@+id/sukela_gotopic"
+		  	android:layout_width="match_parent"
+		  	android:layout_height="36dp"
+		  	android:layout_marginTop="10dp"
+		 	android:background="@drawable/btnyellow"
+		 	android:textColor="#2E2E2E"
+		 	android:textStyle="bold"
+		 	android:onClick="goTopic"
+			android:text="tumunu goster" />
+		
+		<com.startapp.android.publish.banner.Banner
+			android:id="@+id/startAppBanner"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp" />
+        
+  	</LinearLayout>
+
+</ScrollView>

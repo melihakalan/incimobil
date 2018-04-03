@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/msg_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/inciback"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Msg" >
+    
+	<LinearLayout 
+        android:id="@+id/msg_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >	        
+	        
+	        <EditText 
+	            android:id="@+id/msg_text"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:lines="5"
+	            android:textColor="#D8D8D8"
+	            android:hint="mesaj yaz"
+	            android:gravity="left"
+	            android:textColorHint="#A4A4A4" />
+	        
+	  		<EditText 
+	            android:id="@+id/msg_user"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:textColor="#D8D8D8"
+	            android:hint="yazar"
+	            android:gravity="left"
+	            android:textColorHint="#A4A4A4" />
+	  		
+	  		<Button
+		        android:id="@+id/msg_send"
+		        android:layout_width="96dp"
+		        android:layout_height="36dp"
+		        android:background="@drawable/btnyellow"
+		        android:textColor="#2E2E2E"
+		        android:textStyle="bold"
+		        android:onClick="sendMsg"
+		        android:layout_marginTop="10dp"
+		        android:layout_gravity="center"
+		        android:text="gonder" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/msg_body"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:orientation="vertical" />
+	    
+	    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+        
+			<Button
+				android:id="@+id/msg_goprev"
+			 	android:layout_width="72dp"
+			 	android:layout_height="36dp"
+			 	android:background="@drawable/btnyellow"
+			 	android:textColor="#2E2E2E"
+			  	android:textStyle="bold"
+			  	android:onClick="goPreviousPage"
+				android:text="&lt;" />
+			<Button
+			 	android:id="@+id/msg_gonext"
+				android:layout_width="72dp"
+				android:layout_height="36dp"
+				android:background="@drawable/btnyellow"
+				android:textColor="#2E2E2E"
+				android:textStyle="bold"
+				android:onClick="goNextPage"
+			  	android:text="&gt;" />
+		</LinearLayout>
+	
+	</LinearLayout>
+
+</ScrollView>

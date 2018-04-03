@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  	xmlns:home="http://schemas.android.com/apk/res-auto">
+    	
+	<item android:id="@+id/menu_me"
+		android:icon="@drawable/ic_menu_me"
+		android:title="ben"
+		home:showAsAction="ifRoom" />
+	
+	<item android:id="@+id/menu_msg"
+		android:icon="@drawable/ic_menu_msg"
+		android:title="mesaj"
+		home:showAsAction="ifRoom" />
+	
+	<item android:id="@+id/menu_notice"
+		android:icon="@drawable/ic_menu_notice"
+		android:title="olaylar"
+		home:showAsAction="ifRoom" />
+	
+	<item android:id="@+id/menu_out"
+		android:icon="@drawable/ic_menu_out"
+		android:title="cikis"
+		home:showAsAction="ifRoom" />
+</menu>
